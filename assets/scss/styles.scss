@@ -3,6 +3,9 @@
 
 
 /*** general ***/
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   line-height: 1;
@@ -201,8 +204,8 @@ $color-primary: #D18A37; // orange
 /*** start of about us section ***/
 
 .about-us {
-  margin-top: 20%;
-  padding: 0 5%;
+  margin-top: 15%;
+  padding: 8% 5%;
 
   h2 {
     font-size: 25px;
@@ -219,7 +222,6 @@ $color-primary: #D18A37; // orange
     .row {
 
       .aboutUs-img {
-        // display: inline-block;
     
         img { 
           height: auto;
@@ -229,12 +231,9 @@ $color-primary: #D18A37; // orange
       } 
 
       .aboutUs-textBox {
-        // width: 65%;
-        // float: right;
     
         p {
           line-height: 1.7;
-          // padding-bottom: 15px;
         }
       }
     }
@@ -336,8 +335,8 @@ $color-primary: #D18A37; // orange
 
 /*** start of our product section ***/
 .our-products {
-  margin-top: 100px;
-  padding: 0 5%;
+  margin-top: 12%;
+  padding: 8% 5%;
 
   .container {
 
@@ -400,6 +399,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 
   p {
     display: inline-block;
