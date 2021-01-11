@@ -7,6 +7,7 @@ body {
     line-height: 1;
     background: white;
     color: #555555;
+    font-family: 'Open sans', sans-serif;
   }
   
   ol,
@@ -30,10 +31,6 @@ body {
   table {
     border-collapse: collapse;
     border-spacing: 0;
-  }
-  
-  body {
-    font-family: 'Open sans', sans-serif;
   }
   
   a {
@@ -93,6 +90,7 @@ body {
   
         a:hover {
           color: $color-primary;
+          transition: all 0.3s ease;
         }
       }
     }
@@ -147,7 +145,7 @@ main {
               }
 
                 .btn {
-                  color: $color-primary;
+                  color: #fff;
                   background-color: #232323;
                   width: 100%;
                   text-transform: uppercase;
@@ -155,6 +153,9 @@ main {
                   font-size: 18px;
                   height: 50px;
                 } 
+                .btn:hover {
+                  color: $color-primary;
+                }
             }
         }
     }
@@ -215,6 +216,9 @@ footer {
     }
   }
   @media (max-width: 990px) {
+    #navbar #nav-list{
+      padding-top: 30px;
+    }
     .contact-logo-box {
       margin-right: 0;
     }

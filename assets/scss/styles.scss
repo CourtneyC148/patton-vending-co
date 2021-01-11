@@ -9,8 +9,9 @@ html {
 
 body {
   line-height: 1;
-  background: white;
+  background: #fff;
   color: #555555;
+  font-family: 'Open sans', sans-serif;
 }
 
 ol,
@@ -34,10 +35,6 @@ q:before {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-body {
-  font-family: 'Open sans', sans-serif;
 }
 
 a {
@@ -97,6 +94,7 @@ $color-primary: #D18A37; // orange
 
       a:hover {
         color: $color-primary;
+        transition: all 0.3s ease;
       }
     }
   }
@@ -224,9 +222,11 @@ $color-primary: #D18A37; // orange
       .aboutUs-img {
     
         img { 
-          height: auto;
+          height: 500px;
           width: 400px;
           border-radius: 7px;
+          object-fit: cover;
+          max-width: 100%;
         }
       } 
 
@@ -376,6 +376,8 @@ $color-primary: #D18A37; // orange
         img {
           height: 500px;
           width: 350px;
+          object-fit: cover;
+          max-width: 100%;
         }
       }
     }
@@ -428,7 +430,17 @@ footer {
 
 /*** media queries ***/
 
-@media (max-width: 992px) {
+@media only screen and (max-width: 1260px)  {
+  #contact-box {
+    top: 55%;
+  }
+}
+
+@media (max-width: 990px) {
+  #navbar #nav-list{
+    padding-top: 30px;
+  }
+
   .header-text-box {
     text-align: center;
     left: 50% !important;
