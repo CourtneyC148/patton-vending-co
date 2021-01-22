@@ -469,6 +469,7 @@ footer {
   }
   .header-text-box {
     width: 80%;
+    top: 57% !important;
 
     #primary-header {
       br {
@@ -502,6 +503,9 @@ footer {
     .contact-form {
       br {
         display: block;
+      }
+      #email {
+        margin-right: 0;
       }
     }
   }
